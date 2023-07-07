@@ -7,7 +7,7 @@ require("dotenv").config();
 //   logging: false,
 // });
 const db = new Sequelize(
-  `${process.env.DATABASE}`,
+  `${process.env.DATABASE_URL}`,
   `${process.env.USER_NAME}`,
   `${process.env.PASSWORD}`,
   {
