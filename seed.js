@@ -42,22 +42,6 @@ const seedCampus = [
   },
 ];
 
-// const seed = async () => {
-//   // Check if the data already exists before inserting
-//   const existingStudents = await Students.findAll();
-//   const existingCampus = await Campus.findAll();
-
-//   if (existingStudents.length === 0 && existingCampus.length === 0) {
-//     await Students.bulkCreate(seedStudents);
-//     await Campus.bulkCreate(seedCampus);
-//     console.log("Seeding complete");
-//   } else {
-//     console.log("Data already exists, skipping seeding");
-//   }
-// };
-
-// seed().then(() => process.exit());
-
 const seed = async () => {
   try {
     await db.sync({ force: true }); // Drops existing tables and recreates them
