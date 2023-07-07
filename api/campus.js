@@ -9,8 +9,8 @@ router.get("/", async (req, res, next) => {
     const allCampus = await Campus.findAll();
 
     allCampus
-      ? res.status(200).json(allCampus) 
-      : res.status(404).send("Campus List Not Found"); 
+      ? res.status(200).json(allCampus)
+      : res.status(404).send("Campus List Not Found");
   } catch (error) {
     next(error);
   }

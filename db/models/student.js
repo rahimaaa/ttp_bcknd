@@ -2,7 +2,6 @@ const { DataTypes } = require("sequelize");
 const db = require("../db");
 const DEFAULTUSERIMAGE = " ";
 const Student = db.define("student", {
-  // ex.
   first_name: {
     type: DataTypes.STRING,
     allowNull: false,
